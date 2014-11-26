@@ -123,6 +123,8 @@ int main(int argc, char *argv[])
 				case 3:total=left_val*right_val;break;
 				case 4:total=left_val/right_val;break;
 				//default: 
+				
+				}
 				op=0;
 				char test[100];
 				_snprintf_s(test,100,"%d",total);
@@ -130,7 +132,6 @@ int main(int argc, char *argv[])
 				printf("total : %d\n",total);
 				for(int k=0;k<strlen(test);k++){
 					buffer[replace_position+k]=test[k];
-				}
 				}
 			}
 			temp++;
